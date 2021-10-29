@@ -76,3 +76,21 @@ Copyright (c) _2021_ _Matt C._
 **Test:** _It should print something funny instead of the number 69._
 * __Code:__ roboger("71");
 * __Expected Output:__ \[...\] "67 - 68 - _Nice!_ - 70 - Beep!"
+
+### **Describe** _fizzBuzzer()_
+
+**Test:** _It should display all the numbers from 1 to the number that was input._
+* __Code:__ fizzBuzzer(14);
+* __Expected Output:__ "1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14"
+
+**Test:** _It should display 'fizz' instead of any number divisible by 3._
+* __Code:__ fizzBuzzer(14);
+* __Expected Output:__ "1 - 2 - fizz - 4 - 5 - fizz - 7 - 8 - fizz - 10 - 11 - fizz - 13 - 14"
+
+**Test:** _It should display 'buzz' instead of any number divisible by 5._
+* __Code:__ fizzBuzzer(14);
+* __Expected Output:__ "1 - 2 - fizz - 4 - buzz - fizz - 7 - 8 - fizz - buzz - 11 - fizz - 13 - 14"
+
+**Test:** _It should display 'fizzbuzz' instead of any number divisible by 15._
+* __Code:__ fizzBuzzer(15);
+* __Expected Output:__ "1 - 2 - fizz - 4 - buzz - fizz - 7 - 8 - fizz - buzz - 11 - fizz - 13 - 14 - fizzbuzz"

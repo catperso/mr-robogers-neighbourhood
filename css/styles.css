@@ -9,6 +9,7 @@ h1 {
 
 .btn {
   font-weight: bolder;
+  float: right;
 }
 
 .jumbotron {

@@ -1,6 +1,6 @@
 // Business Logic
 
-function roboger(input, name) {
+function roboger(input, reverse, name) {
   if (input < 1) {
     return [0];
   }
@@ -13,9 +13,16 @@ function roboger(input, name) {
     neighbour = ", " + name + "?";
   }
 
-  for (let i=0; i <= targetNumber; i++) {
-    numberArray.push(i);
+  if (reverse) {
+    for (let i=targetNumber; i >= 0; i--) {
+      numberArray.push(i);
+    }
+  } else {
+    for (let i=0; i <= targetNumber; i++) {
+      numberArray.push(i);
+    }  
   }
+
 
   numberArray = numberArray.map(function(number) {
     if (number.toString().includes(3)) {
@@ -38,9 +45,13 @@ $(document).ready(function() {
   $("#form-one").submit(function(event) {
     event.preventDefault();
 
+    let reverse = false;
+    if ($("input:checked").val()) {
+      reverse = true;
+    }
     const userInput = $("#user-number").val();
     const userName = $("#user-name").val().toUpperCase();
-    let outputArray = roboger(userInput, userName);
+    let outputArray = roboger(userInput, reverse, userName);
 
     $("ul").empty();
 

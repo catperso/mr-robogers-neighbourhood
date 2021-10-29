@@ -70,5 +70,9 @@ Copyright (c) _2021_ _Matt C._
 * __Expected Output:__ "0 - Beep! - Boop! - Won't you be my neighbour, Roger? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour, Roger?"
 
 **Test:** _It should reverse the output order if the user chooses._
-* __Code:__ roboger("13", true, "Roger")
+* __Code:__ roboger("13", true, "Roger");
 * __Expected Output:__ "Won't you be my neighbour, Roger? - Boop! - Beep! - Beep! - 9 - 8 - 7 - 6 - 5 - 4 - Won't you be my neighbour, Roger? - Boop! - Beep! - 0"
+
+**Test:** _It should print something funny instead of the number 69._
+* __Code:__ roboger("71");
+* __Expected Output:__ \[...\] "67 - 68 - _Nice!_ - 70 - Beep!"

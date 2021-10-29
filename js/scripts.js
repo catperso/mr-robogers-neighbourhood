@@ -18,6 +18,10 @@ function roboger(input) {
   numberArray = numberArray.map(function(number) {
     if (number.toString().includes(3)) {
       return "Won't you be my neighbour?";
+    } else if (number.toString().includes(2)) {
+      return "Boop!";
+    } else if (number.toString().includes(1)) {
+      return "Beep!";
     } else {
       return number;
     }

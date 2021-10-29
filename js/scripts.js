@@ -1,9 +1,6 @@
 // Business Logic
 
 function roboger(input) {
-  if (!parseInt(input)) {
-    return ["Numbers only, please"];
-  }
   if (input < 1) {
     return [0];
   }

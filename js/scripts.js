@@ -2,10 +2,10 @@
 
 function roboger(input) {
   if (!parseInt(input)) {
-    return "Numbers only, please";
+    return ["Numbers only, please"];
   }
   if (input < 1) {
-    return 0;
+    return [0];
   }
 
   let targetNumber = parseInt(input);
@@ -29,3 +29,20 @@ function roboger(input) {
 
   return numberArray;
 }
+
+// UI Logic
+
+$(document).ready(function() {
+  $("#form-one").submit(function(event) {
+    event.preventDefault();
+
+    const userInput = $("#user-number").val();
+    let outputArray = roboger(userInput);
+
+    $("ul").empty();
+
+    outputArray.forEach(function(number) {
+      $("ul").append("<li>" + number + "</li>");
+    });
+  });
+});

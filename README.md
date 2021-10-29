@@ -64,3 +64,7 @@ Copyright (c) _2021_ _Matt C._
 **Test:** _It should change all displayed numbers that contain a 1 to "Beep!" if they don't also contain a 2 or a 3._
 * __Code:__ roboger("13");
 * __Expected Output:__ "0 - Beep! - Boop! - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour?"
+
+**Test:** _It should append the user's name to each 'Won't you be my neighbour?' if one was inputted._
+* __Code:__ roboger("13", "Roger");
+* __Expected Output:__ "0 - Beep! - Boop! - Won't you be my neighbour, Roger? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour, Roger?"

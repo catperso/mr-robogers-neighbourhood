@@ -17,12 +17,24 @@ h1 {
 }
 
 #output {
-  background-color: rgba(255, 228, 196, 0.89);
+  background-color: rgba(70, 50, 26, 0.911);
+  color: limegreen
 }
 
 #input-card {
   padding: 5px;
-  background-color: rgba(255, 200, 132, 0.815);
+  background-color: rgba(70, 50, 26, 0.911);
+  color: bisque;
+}
+
+#user-number {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.console {
+  font-weight: bold;
+  color: rgb(0, 255, 0);
 }
 
 body {

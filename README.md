@@ -68,3 +68,7 @@ Copyright (c) _2021_ _Matt C._
 **Test:** _It should append the user's name to each 'Won't you be my neighbour?' if one was inputted._
 * __Code:__ roboger("13", "Roger");
 * __Expected Output:__ "0 - Beep! - Boop! - Won't you be my neighbour, Roger? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour, Roger?"
+
+**Test:** _It should reverse the output order if the user chooses._
+* __Code:__ roboger("13", true, "Roger")
+* __Expected Output:__ "Won't you be my neighbour, Roger? - Boop! - Beep! - Beep! - 9 - 8 - 7 - 6 - 5 - 4 - Won't you be my neighbour, Roger? - Boop! - Beep! - 0"

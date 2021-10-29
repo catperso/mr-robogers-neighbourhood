@@ -40,3 +40,8 @@ h1 {
 body {
   background-image: url(../img/plating.jpg);
 }
+
+li {
+  list-style-type: '> ';
+  font-weight: bold;
+}

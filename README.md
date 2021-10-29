@@ -49,18 +49,18 @@ Copyright (c) _2021_ _Matt C._
 * __Code:__ roboger("0"); || roboger("-16");
 * __Expected Output:__ "0"
 
-**Test:** _It should display all numbers from 1 to the number that was input._
+**Test:** _It should display all numbers from 0 to the number that was input._
 * __Code:__ roboger("8");
-* __Expected Output:__ "1 - 2 - 3 - 4 - 5 - 6 - 7 - 8"
+* __Expected Output:__ "0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8"
 
 **Test:** _It should change all displayed numbers that contain a 3 to "Won't you be my neighbour?"._
 * __Code:__ roboger("13");
-* __Expected Output:__ "1 - 2 - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - Won't you be my neighbour?"
+* __Expected Output:__ "0 - 1 - 2 - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - Won't you be my neighbour?"
 
 **Test:** _It should change all displayed numbers that contain a 2 to "Boop!" if they don't also contain a 3._
 * __Code:__ roboger("13");
-* __Expected Output:__ "1 - Boop! - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - Boop! - Won't you be my neighbour?"
+* __Expected Output:__ "0 - 1 - Boop! - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - Boop! - Won't you be my neighbour?"
 
 **Test:** _It should change all displayed numbers that contain a 1 to "Beep!" if they don't also contain a 2 or a 3._
 * __Code:__ roboger("13");
-* __Expected Output:__ "Beep! - Boop! - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour?"
+* __Expected Output:__ "0 - Beep! - Boop! - Won't you be my neighbour? - 4 - 5 - 6 - 7 - 8 - 9 - Beep! - Beep! - Boop! - Won't you be my neighbour?"

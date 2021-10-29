@@ -32,7 +32,28 @@ function roboger(input, reverse, name) {
   });
   return numberArray;
 }
-
+function fizzBuzzer(input) {
+  if (input < 1) {
+    return ["Enter a number for fizzbuzz!"];
+  }
+  let target = parseInt(input);
+  let numberArray = [];
+  for (let i=1; i <= target; i++) {
+    numberArray.push(i);
+  }
+  numberArray = numberArray.map(function(number) {
+    if (!(number % 15)) {
+      return "fizzbuzz";
+    } else if (!(number % 5)) {
+      return "buzz";
+    } else if (!(number % 3)) {
+      return "fizz";
+    } else {
+      return number;
+    }
+  });
+  return numberArray;
+}
 $(document).ready(function() {
   $("#form-one").submit(function(event) {
     event.preventDefault();
@@ -49,9 +70,12 @@ $(document).ready(function() {
     });
   });
   $("#bonus").click(function() {
-    const userInput = $("#user-number").val();
+    const fizzBuzzIn = $("#user-number").val();
     $("#fizz-buzz").empty();
-    $("#fizz-buzz").append("<li> Super Secret Bonus! </li>");
-    $("#fizz-buzz").append("<li>" + userInput + "</li>");
+    let fizzBuzzOut = fizzBuzzer(fizzBuzzIn);
+    $("#fizz-buzz").append("<li>Super Secret Bonus!</li>");
+    fizzBuzzOut.forEach(function(number) {
+      $("#fizz-buzz").append("<li>" + number + "</li>");
+    });
   });
 });

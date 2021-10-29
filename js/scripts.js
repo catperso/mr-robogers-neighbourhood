@@ -1,18 +1,13 @@
-// Business Logic
-
 function roboger(input, reverse, name) {
   if (input < 1) {
     return [0];
   }
-
   let targetNumber = parseInt(input);
   let numberArray = [];
   let neighbour = '?';
-
   if (name) {
     neighbour = ", " + name + "?";
   }
-
   if (reverse) {
     for (let i=targetNumber; i >= 0; i--) {
       numberArray.push(i);
@@ -22,8 +17,6 @@ function roboger(input, reverse, name) {
       numberArray.push(i);
     }  
   }
-
-
   numberArray = numberArray.map(function(number) {
     if (number.toString().includes(3)) {
       return "Won't you be my neighbour" + neighbour;
@@ -31,20 +24,19 @@ function roboger(input, reverse, name) {
       return "Boop!";
     } else if (number.toString().includes(1)) {
       return "Beep!";
+    } else if (parseInt(number) === 69) {
+      return '<a href="http://bitly.com/98K8eH" target=_blank><em>Nice</em></a>'
     } else {
       return number;
     }
   });
-
   return numberArray;
 }
-
-// UI Logic
 
 $(document).ready(function() {
   $("#form-one").submit(function(event) {
     event.preventDefault();
-
+    $("ul").empty();
     let reverse = false;
     if ($("input:checked").val()) {
       reverse = true;
@@ -52,9 +44,6 @@ $(document).ready(function() {
     const userInput = $("#user-number").val();
     const userName = $("#user-name").val().toUpperCase();
     let outputArray = roboger(userInput, reverse, userName);
-
-    $("ul").empty();
-
     outputArray.forEach(function(number) {
       $("ul").append("<li>" + number + "</li>");
     });

@@ -2,7 +2,7 @@
 
 #### By _**Matt C.**_
 
-#### _{Brief description of application}_
+#### _Counts up to an inputted number with a few fun adjustments_
 
 ## Technologies Used
 
@@ -15,13 +15,14 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_When you input a number, it will list all the numbers between 0 and your number, changing any number with a 1 to 'Beep!', any number with a 2 to 'Boop!', and any number with a 3 to 'Won't you be my neighbour?'. Includes optional name input for personalized output, and the choice to count down FROM your number instead of up TO your number. Click on the picture for an unrelated secondary output._
 
 ## Setup/Installation Requirements
 
 * _Clone this repository to your local device_
 * _Run index.html in your browser_
 * _Enjoy the lovely CSS_
+* _Or experience the site live on github pages right [here](https://catperso.github.io/mr-robogers-neighbourhood)!_
 
 ## Known Bugs
 
@@ -36,10 +37,6 @@ Copyright (c) _2021_ _Matt C._
 ## Specs
 
 ### **Describe** _roboger()_
-
-**Test:**
-* __Code:__ 
-* __Expected Output:__
 
 **Test:** _It should display a notification if the user inputs anything other than a number._
 * __Code:__ roboger("Words and strings and sentences and such, basically anything that isn't just a simple number");

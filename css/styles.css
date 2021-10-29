@@ -16,7 +16,7 @@ h1 {
   color: bisque;
 }
 
-#output {
+.output {
   background-color: rgba(70, 50, 26, 0.911);
   color: limegreen
 }

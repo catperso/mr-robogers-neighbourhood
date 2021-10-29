@@ -17,15 +17,17 @@
     </div>
     <div class="row">
       <div class="col-lg-6">
-        <form id="form-one">
-          <div class="form-group">
-            <label for="user-number">BEEP BOOP Please give me your number BOOP</label>
-            <input id="user-number" class="form-control" type="number" min="0" placeholder="I AM ROGER INSERT NUMBER" required>
-          </div>
-          <button type="submit" class="btn btn-success" id="submit">CALCULATE!</button>
-        </form>
+        <div class="card" id="input-card">
+          <form id="form-one">
+            <div class="form-group">
+              <label for="user-number">BEEP BOOP Please give me your number BOOP</label>
+              <input id="user-number" class="form-control" type="number" min="0" placeholder="I AM ROGER INSERT NUMBER" required>
+            </div>
+            <button type="submit" class="btn btn-success" id="submit">CALCULATE!</button>
+          </form>
+        </div>
         <hr>
-        <ul></ul>    
+        <ul id="output"></ul>    
       </div>
       <div class="col-lg-6">
         <img src="img/mr-roger-roger.jpg" alt="A photo of Mr Roger-Roger">

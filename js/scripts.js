@@ -25,7 +25,7 @@ function roboger(input, reverse, name) {
     } else if (number.toString().includes(1)) {
       return "Beep!";
     } else if (parseInt(number) === 69) {
-      return '<a href="http://bitly.com/98K8eH" target=_blank><em>Nice</em></a>'
+      return '<a href="http://bitly.com/98K8eH" target=_blank><em>Nice</em></a>';
     } else {
       return number;
     }
@@ -36,7 +36,7 @@ function roboger(input, reverse, name) {
 $(document).ready(function() {
   $("#form-one").submit(function(event) {
     event.preventDefault();
-    $("ul").empty();
+    $("#beep-boop").empty();
     let reverse = false;
     if ($("input:checked").val()) {
       reverse = true;
@@ -45,7 +45,13 @@ $(document).ready(function() {
     const userName = $("#user-name").val().toUpperCase();
     let outputArray = roboger(userInput, reverse, userName);
     outputArray.forEach(function(number) {
-      $("ul").append("<li>" + number + "</li>");
+      $("#beep-boop").append("<li>" + number + "</li>");
     });
+  });
+  $("#bonus").click(function() {
+    const userInput = $("#user-number").val();
+    $("#fizz-buzz").empty();
+    $("#fizz-buzz").append("<li> Super Secret Bonus! </li>");
+    $("#fizz-buzz").append("<li>" + userInput + "</li>");
   });
 });

@@ -46,3 +46,7 @@ li {
   list-style-type: '> ';
   font-weight: bold;
 }
+
+#bonus {
+  display: none;
+}

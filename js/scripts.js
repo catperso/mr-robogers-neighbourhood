@@ -55,6 +55,7 @@ function fizzBuzzer(input) {
   return numberArray;
 }
 $(document).ready(function() {
+  $("#bonus").slideDown();
   $("#form-one").submit(function(event) {
     event.preventDefault();
     $("#beep-boop").empty();
